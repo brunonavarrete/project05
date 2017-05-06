@@ -1,0 +1,96 @@
+.main-content {
+	position:relative;
+}
+#album-data {
+	display:none;	
+	position: fixed;
+    width: 100%;
+    top: 80px;
+    bottom:0;
+    left: 0;
+    padding:62px 0 0;
+    overflow-y: auto;
+    background-color:#f6f7f7;
+}
+
+#album-data .album-data-wrapper {
+	display:flex;
+	padding:15px;
+	width:1024px;
+	margin:0 auto;
+	border-radius:6px;
+	background-color:#fff;
+}
+
+#album-data .album-cover,#album-data .album-info {
+	display:inline-block;
+}
+
+#album-data .album-cover {
+	width:250px;
+	vertical-align: top;
+}
+#album-data .album-cover img {
+	width:100%;
+	height:auto;
+}
+
+#album-data .album-info {
+	flex:1;
+	padding:0 30px;
+}
+
+#album-data .album-info h1,#album-data .album-info h2 {
+	margin:0 0 5px;
+	padding:0;
+}
+
+#album-data .album-info h1 a {
+	color:#000;
+}
+
+#album-data .album-info h1 a small {
+	font-size:0.5em;
+	opacity:0.4;
+}
+
+#album-data .album-info h2 {
+	color:#aaa;
+}
+
+#album-data .album-info h2 span::after {
+    content:', ';
+  }
+#album-data .album-info h2 span:nth-last-child(1)::after {
+	content:'';
+}
+
+#album-data .album-info .tracks {
+	padding-left:20px;
+}
+
+#album-data .buttons {
+	display:block;
+	width:1024px;
+	margin:20px auto;
+}
+
+#album-data .buttons a {
+	width:180px;
+	padding:6px 15px;
+	text-align:center;
+	border-radius:4px;
+	cursor:pointer;
+	float:right;
+}
+
+#album-data .buttons a.go {
+	background-color:#1ED760;
+	color:#fff;
+}
+
+#album-data .buttons a.back {
+	margin-right:10px;
+	background-color:#ddd;
+	color:#000;
+}
